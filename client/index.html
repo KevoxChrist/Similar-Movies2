@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monocle | Film Library</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Jersey 25 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo nav-component" href="/index.html">
+          <img src="../images/face_12186202.png" alt="Monocle Logo" />
+        </a>
+
+        <form
+          class="search nav-component"
+          id="search-form"
+          action="/search"
+          method="GET"
+        >
+          <input
+            id="search-input"
+            type="text"
+            name="query"
+            placeholder="Enter movie name"
+            required
+          />
+          <!-- <button type="submit">Search</button> -->
+        </form>
+
+        <div class="auth nav-component">
+          <h4>About</h4>
+          <h4>Contact Us</h4>
+          <h4>Login</h4>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="movie-section">
+        <section id="results">
+          
+        </section>
+      </section>
+    </main>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
