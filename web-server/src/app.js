@@ -3,7 +3,11 @@ require("dotenv").config();
 const request = require("postman-request");
 const path = require("path");
 const serverless = require("serverless-http");
+const cors = require("cors");
 
+app.use(cors({
+  origin: "https://similar-movies2.vercel.app"
+ }));
 
 
 
@@ -12,6 +16,7 @@ const apiKey = process.env.TMDB_API_KEY;
 const PORT = 3000;
 
 console.log(apiKey);
+
 
 
 app.use(express.static(path.join(__dirname, "../../client")))

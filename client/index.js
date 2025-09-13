@@ -72,7 +72,4 @@ resultsDiv.addEventListener("click", async (e) => {
     console.log("Similar movies:", data);
     
   }
-});
-
-
 
