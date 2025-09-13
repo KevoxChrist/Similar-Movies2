@@ -3,7 +3,10 @@ const input = document.getElementById("search-input");
 const resultsDiv = document.getElementById("results");
 const similarBtn = document.querySelectorAll(".similar-btn")
 
-const API_BASE = "https://backend-sim-movie2.vercel.app";
+const API_BASE =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "https://backend-sim-movie2.vercel.app";
 
 
 
