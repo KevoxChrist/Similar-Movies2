@@ -3,6 +3,12 @@ const input = document.getElementById("search-input");
 const resultsDiv = document.getElementById("results");
 const similarBtn = document.querySelectorAll(".similar-btn")
 
+
+fetch("https://backend-sim-movie2.vercel.app/")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+
 form.addEventListener("input", async (e) => {
   e.preventDefault(); // stop page reload
   const query = input.value;
@@ -11,6 +17,8 @@ form.addEventListener("input", async (e) => {
   const data = await response.json();
 
 
+
+  
   const movieCard = data.results
     .map(
       (movie) => `
@@ -68,6 +76,3 @@ resultsDiv.addEventListener("click", async (e) => {
 
 
 
-fetch("https://backend-sim-movie2.vercel.app/")
-  .then(res => res.json())
-  .then(data => console.log(data));
