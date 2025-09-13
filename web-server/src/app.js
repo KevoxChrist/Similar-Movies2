@@ -2,6 +2,8 @@ const express = require("express");
 require("dotenv").config();
 const request = require("postman-request");
 const path = require("path");
+const serverless = require("serverless-http");
+
 
 
 
@@ -47,12 +49,13 @@ app.get("/similar", (req, res) => {
 
 
 
+module.exports = app;
+module.exports.handler = serverless(app);
 
 
-
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running on http://localhost:${PORT}`);
+// });
 
 
 

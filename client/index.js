@@ -46,10 +46,7 @@ resultsDiv.addEventListener("click", async (e) => {
     const card = e.target.closest(".movie-card"); //This will get the closet movie card which would be the parent div
     const movieId = card.id; //movie card div's id
 
-   
-
-
-
+  
 
     console.log("Movie ID:", movieId);
 
@@ -69,3 +66,8 @@ resultsDiv.addEventListener("click", async (e) => {
   }
 });
 
+
+
+fetch("https://your-backend.vercel.app/movies")
+  .then(res => res.json())
+  .then(data => console.log(data));
