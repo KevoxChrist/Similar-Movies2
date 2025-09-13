@@ -68,6 +68,6 @@ resultsDiv.addEventListener("click", async (e) => {
 
 
 
-fetch("https://your-backend.vercel.app/movies")
+fetch("https://backend-sim-movie2.vercel.app/")
   .then(res => res.json())
   .then(data => console.log(data));
