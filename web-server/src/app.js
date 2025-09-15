@@ -15,7 +15,7 @@ const app = express();
 const apiKey = process.env.TMDB_API_KEY;
 const PORT = 3000;
 
-console.log(apiKey);
+
 
 
 
